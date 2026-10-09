@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "owner": "foss-earth/.github",
+  "package": {
+    "name": "@foss-earth/community",
+    "version": "0.1.0",
+    "status": "private-source-candidate; unverified and unpublished"
+  },
+  "purpose": "Earth community/default policy documents and public metadata; no runtime implementation or executable policy copy.",
+  "documents": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "contributing": "CONTRIBUTING.md",
+    "codeOfConduct": "CODE_OF_CONDUCT.md",
+    "security": "SECURITY.md",
+    "license": "LICENSE",
+    "notices": "NOTICE"
+  },
+  "contributionPolicy": {
+    "rule": "You cannot have AI as a co-author, or your contributions will be rejected.",
+    "ruleHome": "CONTRIBUTING.md#commit-attribution",
+    "advertisingRationale": "Vendor attribution in permanent contribution records can imply endorsement; promotional contributor credits are banned while human responsibility, legitimate human credit, factual documentation and required notices remain.",
+    "humanResponsibility": [
+      "accuracy",
+      "review responses",
+      "provenance",
+      "rights"
+    ]
+  },
+  "sharedAttribution": {
+    "owner": "foss-earth/ci",
+    "package": "@foss-earth/ci",
+    "version": "0.1.0",
+    "revision": "9e046dd482e0229dc7c7b2d71b079d5905664656",
+    "artifactSha256": "450ede699f55f9b9c78146eadb73de7c6297e56553e7d7f9e5b164786a7beb24",
+    "sizeBytes": 55587,
+    "policySha256": "9ca88bf5861685e22e65e5f39fa65b05faaf9c218875fccbecce1b9f2dca5bd3",
+    "trustedDescriptor": ".attribution-release.json",
+    "consumerConfig": ".attribution.json",
+    "caller": ".github/workflows/attribution-check.yml",
+    "requiredContext": "attribution / Attribution policy",
+    "metadataIncludesDocsOnly": true,
+    "currentPolicyBoundary": "Frozen executable descriptor pins earlier uppercase wording; current document rule is sentence case.",
+    "nextCheckedPolicyPin": "pending Platform source release and actual new conformance; no invented digest"
+  },
+  "adoption": {
+    "githubDefaults": "The real repository community files can provide organization defaults after reviewed publication. Each repository keeps its own setup/ownership/license guidance.",
+    "metadataPackage": "Data and document exports expose the same actual owner files through exact archive/package pins.",
+    "rules": "Defaults never configure or prove remote rules, required App/check binding, bypasses, merge policy or trusted admission.",
+    "status": "source-only; owner checks/full-history/public archive/remote adoption pending"
+  },
+  "provenance": "SOURCE_PROVENANCE.json",
+  "sourceReceipt": "SOURCE_RECEIPT.json",
+  "sourceRouting": "source-routing.json",
+  "lineage": "primary imported cleaned human histories pending",
+  "lineageInputs": "lineage-inputs.json"
+}
