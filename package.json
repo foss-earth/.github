@@ -48,7 +48,8 @@
   "scripts": {
     "check:conformance": "node node_modules/@foss-earth/ci/bin/conformance.mjs --consumer . --trusted-release .attribution-release.json --output-root build/common-conformance",
     "check:attribution": "node node_modules/@foss-earth/ci/bin/attribution.mjs --repo . --refs-file build/repository-split/intended-publication-refs.json",
-    "ci": "npm run check:conformance && npm run check:attribution"
+    "ci": "npm run check:conformance && npm run check:documents && npm run check:attribution",
+    "check:documents": "node scripts/check-community-package.mjs"
   },
   "devDependencies": {
     "@foss-earth/ci": "0.1.0"

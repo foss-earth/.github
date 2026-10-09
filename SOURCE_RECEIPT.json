@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "owner": "foss-earth/.github",
-  "preparedAtUtc": "2026-10-09T21-24-42Z",
+  "preparedAtUtc": "2026-10-09T21-28-10Z",
   "status": "SOURCE-ONLY current bytes; checks/history/installed consumers/artifacts/adoption/admission UNRUN",
   "sourceRevision": "90e23b3ee96f53ec5900afc5991a21fffa58649d",
-  "priorSourceReceipt": "build/source-only/2026-10-09T21-24-42Z/SOURCE_RECEIPT.json.before",
-  "sourceManifestPath": "build/source-only/2026-10-09T21-24-42Z/source-manifest.json",
+  "priorSourceReceipt": "build/source-only/2026-10-09T21-28-10Z/SOURCE_RECEIPT.json.before",
+  "sourceManifestPath": "build/source-only/2026-10-09T21-28-10Z/source-manifest.json",
   "sourceManifestEncoding": "UTF-8 sorted path JSON array, indent2, trailing LF; ignored outputs and receipt excluded",
-  "sourceManifestSha256": "8097b8690f53292469bbd96fd943bbd006fcf4609b99b71ddf6dadc2b4261c5a",
-  "sourceFileCount": 17,
+  "sourceManifestSha256": "3a8f0851e1925c99d1c95adabad9afd4adef5e29c0b5f1199c169070dde2c2c4",
+  "sourceFileCount": 18,
   "provenancePath": "SOURCE_PROVENANCE.json",
-  "provenanceSha256": "774583f388bdf4bdb5bbada158d36ffac1e974041d9cd95df9772b77594f9ea7",
+  "provenanceSha256": "c6e7e4a8c4b2aeb22b35b55c53caedb90c2e88bd3c72ae0d4f4249c9f4307334",
   "publicExports": {
     ".": "./community.json",
     "./metadata": "./community.json",
@@ -93,8 +93,8 @@
     },
     {
       "path": "SOURCE_PROVENANCE.json",
-      "sha256": "774583f388bdf4bdb5bbada158d36ffac1e974041d9cd95df9772b77594f9ea7",
-      "bytes": 12091
+      "sha256": "c6e7e4a8c4b2aeb22b35b55c53caedb90c2e88bd3c72ae0d4f4249c9f4307334",
+      "bytes": 12340
     },
     {
       "path": "community.json",
@@ -108,8 +108,13 @@
     },
     {
       "path": "package.json",
-      "sha256": "0aee329b01b62b71914f055b234f1106e244c3211102fe4a5474113baa40c9e9",
-      "bytes": 2170
+      "sha256": "11be746021ae8d184ca60fed134d1ee4c22de7f3bc330265b82b2e8dc31b89cb",
+      "bytes": 2264
+    },
+    {
+      "path": "scripts/check-community-package.mjs",
+      "sha256": "83b285cd02c61da317c5b3b60f6a620aae195b51f13b4893b3a619de4f5f11b7",
+      "bytes": 2052
     },
     {
       "path": "source-routing.json",

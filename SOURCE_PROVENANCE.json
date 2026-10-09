@@ -174,7 +174,7 @@
     "actualRemoteAdmission": "coordinator gate pending"
   },
   "primarySourceSnapshot": {
-    "createdAtUtc": "2026-10-09T21-24-42Z",
+    "createdAtUtc": "2026-10-09T21-28-10Z",
     "status": "source-only; no qualification or artifact seal",
     "authoredFiles": [
       {
@@ -221,8 +221,8 @@
       },
       {
         "path": "package.json",
-        "sha256": "0aee329b01b62b71914f055b234f1106e244c3211102fe4a5474113baa40c9e9",
-        "bytes": 2170,
+        "sha256": "11be746021ae8d184ca60fed134d1ee4c22de7f3bc330265b82b2e8dc31b89cb",
+        "bytes": 2264,
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       },
       {
@@ -235,6 +235,12 @@
         "path": ".github/workflows/attribution-check.yml",
         "sha256": "63349507da9d004752bb0e43c681089dfd9fd6c26bf8047738cb19025f15135e",
         "bytes": 406,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "scripts/check-community-package.mjs",
+        "sha256": "83b285cd02c61da317c5b3b60f6a620aae195b51f13b4893b3a619de4f5f11b7",
+        "bytes": 2052,
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       }
     ],
