@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "owner": "foss-earth/.github",
-  "preparedAtUtc": "2026-10-09T21-21-34Z",
+  "preparedAtUtc": "2026-10-09T21-24-42Z",
   "status": "SOURCE-ONLY current bytes; checks/history/installed consumers/artifacts/adoption/admission UNRUN",
   "sourceRevision": "90e23b3ee96f53ec5900afc5991a21fffa58649d",
-  "priorSourceReceipt": "build/source-only/2026-10-09T21-21-34Z/SOURCE_RECEIPT.json.before",
-  "sourceManifestPath": "build/source-only/2026-10-09T21-21-34Z/source-manifest.json",
+  "priorSourceReceipt": "build/source-only/2026-10-09T21-24-42Z/SOURCE_RECEIPT.json.before",
+  "sourceManifestPath": "build/source-only/2026-10-09T21-24-42Z/source-manifest.json",
   "sourceManifestEncoding": "UTF-8 sorted path JSON array, indent2, trailing LF; ignored outputs and receipt excluded",
-  "sourceManifestSha256": "f2b622d915da3570a5831a524ba32b6f55f634a3752583da35199514a5e3f3f5",
-  "sourceFileCount": 16,
+  "sourceManifestSha256": "8097b8690f53292469bbd96fd943bbd006fcf4609b99b71ddf6dadc2b4261c5a",
+  "sourceFileCount": 17,
   "provenancePath": "SOURCE_PROVENANCE.json",
-  "provenanceSha256": "01206fb09e6e65214df9beb52ce68d27549a039c123bd46feaf93376b24ae46e",
+  "provenanceSha256": "774583f388bdf4bdb5bbada158d36ffac1e974041d9cd95df9772b77594f9ea7",
   "publicExports": {
     ".": "./community.json",
     "./metadata": "./community.json",
@@ -87,9 +87,14 @@
       "bytes": 791
     },
     {
+      "path": "SOURCE_LINEAGE.json",
+      "sha256": "8e8556cc841b2320514e648f26919ccd4f4e75a61c81f161e7ca084562a59f98",
+      "bytes": 10557
+    },
+    {
       "path": "SOURCE_PROVENANCE.json",
-      "sha256": "01206fb09e6e65214df9beb52ce68d27549a039c123bd46feaf93376b24ae46e",
-      "bytes": 11857
+      "sha256": "774583f388bdf4bdb5bbada158d36ffac1e974041d9cd95df9772b77594f9ea7",
+      "bytes": 12091
     },
     {
       "path": "community.json",

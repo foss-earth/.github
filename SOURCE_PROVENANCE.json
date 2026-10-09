@@ -174,7 +174,7 @@
     "actualRemoteAdmission": "coordinator gate pending"
   },
   "primarySourceSnapshot": {
-    "createdAtUtc": "2026-10-09T21-21-34Z",
+    "createdAtUtc": "2026-10-09T21-24-42Z",
     "status": "source-only; no qualification or artifact seal",
     "authoredFiles": [
       {
@@ -199,6 +199,12 @@
         "path": "README.md",
         "sha256": "26014aad7ad9654d567fb99478fc386d09eaffafccd38629d18627ba7e4c6d0a",
         "bytes": 4537,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "SOURCE_LINEAGE.json",
+        "sha256": "8e8556cc841b2320514e648f26919ccd4f4e75a61c81f161e7ca084562a59f98",
+        "bytes": 10557,
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       },
       {
