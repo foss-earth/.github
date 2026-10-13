@@ -13,7 +13,21 @@ how to build and test it.
   `build/` directory, not in system temp folders.
 - Don't discard uncommitted work you didn't make.
 - Don't deploy, rewrite published history or change repository settings
-  unless asked.
+  unless asked. When asked to publish the live site, use the steps in
+  [docs/deploying.md](https://github.com/foss-earth/docs/blob/main/docs/deploying.md)
+  (`../docs/docs/deploying.md` from an Earth repository). Pushing `main` does
+  not publish it. From a side-by-side checkout:
+
+  ```sh
+  cd ~/gh/foss-earth/app && npm run build
+  cd ../foss-earth.github.io && npm run build && npm run deploy
+  ```
+
+  That copies the app under https://foss-earth.github.io/app/ and pushes the
+  `gh-pages` branch of `foss-earth/foss-earth.github.io`, keeping
+  `/eac-prototype/` and `/examples/`. The campus tour is a second publish,
+  because it links these checkouts: `cd ~/gh/UMN-VR/tour && npm run deploy`
+  builds and pushes https://umn-vr.github.io/tour/.
 - Don't send personal data, accounts or credentials to another service without
   consent.
 - New on-screen controls go in a tab. Create a new tab unless the person
