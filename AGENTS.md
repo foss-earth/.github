@@ -16,3 +16,9 @@ how to build and test it.
   unless asked.
 - Don't send personal data, accounts or credentials to another service without
   consent.
+- New on-screen controls go in a tab. Create a new tab unless the person
+  asked to add them to a tab that already exists. Never float a panel,
+  overlay, or corner plate outside the window tabs unless they explicitly
+  ask for that. A gizmo drawn in the world is not a substitute for that tab.
+  Layout rules: [docs/docs/ui-layout.md](https://github.com/foss-earth/docs/blob/main/docs/ui-layout.md)
+  (`../docs/docs/ui-layout.md` from an Earth repository).
