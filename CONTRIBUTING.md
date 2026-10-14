@@ -9,12 +9,23 @@ Follow the repository's README for setup and checks. Follow its language, strict
 ## Versions
 
 Every repository names its versions after its commits, as `YY.MM.DD.#N`: the
-last two digits of the year, the month and the day of the commit (in the time
-zone it was made in), then `#` and the commit's count among that day's commits,
-starting at 1. `26.10.11.#1` is the first commit made on October 11, 2026.
+last two digits of the year, the month and the day of the commit in UTC, then
+`#` and the commit's count among that day's commits, starting at 1.
+`26.10.11.#1` is the first commit made on October 11, 2026, UTC. A commit made
+at 23:05 in Minneapolis on October 13 is 04:05 UTC on October 14, so its
+version starts `26.10.14`. One clock for everyone keeps a later commit a later
+version, and it is the clock the apps show commit times in.
 Versions are read from the Git history, so nobody sets them by hand.
 `package.json` can't hold this form, so its `version` field is not the
 repository's version.
+
+This is the one statement of the rule, for FOSS Earth, UMN VR and 0SFS alike,
+and [About](https://github.com/foss-earth/about) is its one implementation:
+`commitVersion` and `checkoutVersion` name every app's and site's version. A
+deploy records the commit of each checkout the app is built from in the app's
+`deployed-from.json`, with About's `recordBuildInputs`, and commits it when one
+moved, so new code anywhere in an app is a new version of it. A change to the
+rule is made here and in About, and nowhere else.
 
 Long-term support releases are named `YY.MM.DD LTS`, such as `26.10.11 LTS`,
 and tagged `YY.MM.DD-LTS` in Git, because tag names can't contain spaces.
