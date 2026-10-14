@@ -12,6 +12,11 @@ how to build and test it.
 - Keep scratch files, logs and screenshots in the repository's gitignored
   `build/` directory, not in system temp folders.
 - Don't discard uncommitted work you didn't make.
+- Improve performance and code quality whenever practical while carrying out
+  the requested work. If a suggested improvement could degrade other behavior,
+  and automated tests would not catch that degradation, first add practical
+  coverage. If extending the tests to catch it is impractical, propose the
+  improvement and its tradeoffs to the user before implementing it.
 - Don't deploy, rewrite published history or change repository settings
   unless asked. When asked to publish the live site, use the steps in
   [docs/deploying.md](https://github.com/foss-earth/docs/blob/main/docs/deploying.md)
