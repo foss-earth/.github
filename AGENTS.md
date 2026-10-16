@@ -12,6 +12,20 @@ how to build and test it.
 - Keep scratch files, logs and screenshots in the repository's gitignored
   `build/` directory, not in system temp folders.
 - Don't discard uncommitted work you didn't make.
+- **Google Maps key:** before asking for a key, check `FOSS_EARTH_GOOGLE_KEY`
+  in the environment and ignored `.env.local` files in `~/gh/foss-earth/app`,
+  `~/gh/UMN-VR/tour`, and `~/gh/0sfs/fly`. Read only the named variable; never
+  print the key or commit the file. Build-time photo height preparation uses
+  Google 3D geometry first; another source is a recorded fallback only.
+- **Prefer build-time work over runtime work.** Resolve stable data (including
+  tour/photo placement heights) in explicit preparation scripts and store the
+  result in authored/generated assets. Runtime loads those results; it must not
+  silently recompute image heights as map tiles or LOD change. Use the finest
+  available source data for explicit height preparation, record its provenance,
+  and fail rather than quietly using coarse or missing data. Before removing a
+  legacy runtime path, generate and validate its replacement data and verify
+  every consuming scene still displays its content. Do not land only one half
+  of that migration.
 - Improve performance and code quality whenever practical while carrying out
   the requested work. If a suggested improvement could degrade other behavior,
   and automated tests would not catch that degradation, first add practical
