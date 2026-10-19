@@ -104,9 +104,12 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   everyday control or a title that repeats the tab. Keep titles terse
   (`Resolution/FPS`, not `Resolution and frame rate`).
 - **Physical UX:** camera and image navigation must feel like a physical object
-  with mass, momentum, and direct contact. Direct pointer/touch drags hold the
-  world or sphere ray under the contact; two-finger trackpad swipes inside 360
-  spheres act as FOV-scaled angular impulses without cursor anchoring; and
-  pan, turn, and zoom all share exponential glide inertia. Follow
+  with mass and momentum. Globe drags hold the world under the contact.
+  Panorama one-finger/mouse drags default to **Scroll**, mapping relative XY to
+  FOV-scaled heading/pitch without an anchor; preserve this phone-tested choice
+  and its release inertia. Explicit **Grab** drags and two-touch pinches hold
+  the sphere ray. Two-finger trackpad swipes inside 360 spheres act as
+  FOV-scaled angular impulses without cursor anchoring. Pan, turn, and zoom
+  share exponential glide inertia. Follow
   [docs/docs/physical-ux.md](https://github.com/foss-earth/docs/blob/main/docs/physical-ux.md)
   and [docs/docs/camera-motion.md](https://github.com/foss-earth/docs/blob/main/docs/camera-motion.md).
