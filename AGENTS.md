@@ -97,6 +97,12 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   over verbose action text, with accessible names. Reuse the shared UI factory
   and follow the full [control design
   spec](https://github.com/foss-earth/docs/blob/main/docs/ui-layout.md#compact-segmented-choices).
+- **Fields and sections:** text and number fields are as wide as their text
+  and read as a phrase with their label, `Resolution [1] × ?`. A tab's everyday
+  controls go on the tab itself (its `main` section); use a section only where
+  grouping or tucking away advanced/debug settings helps, never for one
+  everyday control or a title that repeats the tab. Keep titles terse
+  (`Resolution/FPS`, not `Resolution and frame rate`).
 - **Physical UX:** camera and image navigation must feel like a physical object
   with mass, momentum, and direct contact. Direct pointer/touch drags hold the
   world or sphere ray under the contact; two-finger trackpad swipes inside 360
