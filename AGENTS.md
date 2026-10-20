@@ -17,7 +17,11 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   commits and `YY.MM.DD LTS` for long-term support releases.
 - Keep scratch files, logs and screenshots in the repository's gitignored
   `build/` directory, not in system temp folders.
-- Don't discard uncommitted work you didn't make.
+- Don't discard uncommitted work you didn't make. Several agents may work in
+  one checkout at once, so stage by explicit path, never `git add -A` or `.`.
+- 0SFS fly type-checks FOSS Earth's sources with its own types, among them
+  `@webgpu/types`, and its deploy stops on any error. After changing app code,
+  run `npm run typecheck` in `~/gh/0sfs/fly` too.
 - **Google Maps key:** before asking for a key, check `FOSS_EARTH_GOOGLE_KEY`
   in the environment and ignored `.env.local` files in `~/gh/foss-earth/app`,
   `~/gh/UMN-VR/tour`, and `~/gh/0sfs/fly`. Read only the named variable; never
