@@ -81,6 +81,9 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
 - **Paragraph grouping:** each logical component in a paragraph grid has its
   own compact rounded rectangle by default, including collapsed component
   overrides. Keep a choice's segments together inside one track within its group.
+  Show what a part holds by nesting its parts' rounded rectangles inside its
+  own, as matryoshka dolls hold each other, never by indentation
+  ([rule](https://github.com/foss-earth/docs/blob/main/docs/ui-layout.md#nested-rectangles-show-what-holds-what)).
   Expanded component/group titles are the first naturally sized item in the
   same wrapping paragraph grid as their controls, not a separate header row.
   Full section headings are the exception and can occupy their own row.
@@ -97,8 +100,13 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   over verbose action text, with accessible names. Reuse the shared UI factory
   and follow the full [control design
   spec](https://github.com/foss-earth/docs/blob/main/docs/ui-layout.md#compact-segmented-choices).
+- **Sliders:** a number reads `Label [060] fps ?`, and its track shows on
+  demand in a popover. Only a setting set by feel keeps its track shown
+  (`alwaysShowTrack`), and that track's handle is its field. A value keeps one
+  character count across its range, and **?** comes after the track. See the
+  [slider rules](https://github.com/foss-earth/docs/blob/main/docs/ui-layout.md#sliders).
 - **Fields and sections:** text and number fields are as wide as their text
-  and read as a phrase with their label, `Resolution [1] × ?`. A tab's everyday
+  and read as a phrase with their label, `Date (UTC) [2026-04-20] ?`. A tab's everyday
   controls go on the tab itself (its `main` section); use a section only where
   grouping or tucking away advanced/debug settings helps, never for one
   everyday control or a title that repeats the tab. Keep titles terse
