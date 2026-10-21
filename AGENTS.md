@@ -94,6 +94,12 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   Paragraph grids with expandable items show expanded items first, then
   minimized items, using an order override that preserves relative order
   within each group and retains focus/control state.
+- **Card actions:** when an item card has one primary action, make the whole
+  card its native button/link target, including its image, title, status,
+  padding and compact action label. A selected/current item stays actionable:
+  open its settings/editor when available. Selection alone never disables it.
+  Keep the label inside that same control; never nest interactive controls.
+  Preserve separate controls for genuinely distinct secondary actions.
 - **Compact controls:** arrange content as compactly as practical, using natural
   widths and wrapping paragraph grids where useful. Discrete choices use one
   rounded segmented slider with short text buttons (digits for counts: 1
