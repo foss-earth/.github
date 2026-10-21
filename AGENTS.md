@@ -59,6 +59,18 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   builds and pushes https://umn-vr.github.io/tour/.
 - Don't send personal data, accounts or credentials to another service without
   consent.
+- **Screenshots for UI changes:** after a visible UI change, look at it in
+  screenshots before saying it works, and give the person the new and changed
+  images, or `build/shots/index.html`, to review. Take them with
+  `node ~/gh/foss-earth/browser-testing/scripts/shots.mjs`: put every shot in
+  one list in `build/` and run it once against a dev server you keep running,
+  crop each shot to what changed with `selector`, wait for conditions rather
+  than fixed times, and hide live parts such as the frame rate and the map.
+  Open only the shots it reports `new` or `changed`, and read values with a
+  `print` step rather than from an image. A changed shot's old image moves to
+  `build/shots/archive/<UTC time>/`. The FOSS Earth app is ready for input
+  once `.foss-earth-overlay-root` exists; its frame rate shows sooner. See
+  [docs/screenshots.md](https://github.com/foss-earth/browser-testing/blob/main/docs/screenshots.md).
 - **Stranded Chrome clones:** a run of the installed Google Chrome that is
   killed instead of closed leaves a copy of the app, about 2 GB by `du`, under
   `/private/var/folders`. After a Chrome run you stopped, that timed out or that
