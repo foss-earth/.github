@@ -13,7 +13,7 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
 - You cannot have AI as a co-author, or your contributions will be rejected.
   Never add AI author, committer or co-author attribution to commits (see
   [CONTRIBUTING.md](CONTRIBUTING.md)).
-- Versions follow [CONTRIBUTING.md](CONTRIBUTING.md): `YY.MM.DD.#N` for
+- Versions follow [CONTRIBUTING.md](CONTRIBUTING.md): `YY.MM.DD#N` for
   commits and `YY.MM.DD LTS` for long-term support releases.
 - Keep scratch files, logs and screenshots in the repository's gitignored
   `build/` directory, not in system temp folders.

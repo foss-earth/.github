@@ -8,16 +8,19 @@ Follow the repository's README for setup and checks. Follow its language, strict
 
 ## Versions
 
-Every repository names its versions after its commits, as `YY.MM.DD.#N`: the
+Every repository names its versions after its commits, as `YY.MM.DD#N`: the
 last two digits of the year, the month and the day of the commit in UTC, then
 `#` and the commit's count among that day's commits, starting at 1.
-`26.10.11.#1` is the first commit made on October 11, 2026, UTC. A commit made
+`26.10.11#1` is the first commit made on October 11, 2026, UTC. A commit made
 at 23:05 in Minneapolis on October 13 is 04:05 UTC on October 14, so its
 version starts `26.10.14`. One clock for everyone keeps a later commit a later
 version, and it is the clock the apps show commit times in.
 Versions are read from the Git history, so nobody sets them by hand.
 `package.json` can't hold this form, so its `version` field is not the
 repository's version.
+
+Future builds use `YY.MM.DD#N`, without a dot before `#`. Existing build and
+release records using the earlier `YY.MM.DD.#N` spelling remain unchanged.
 
 This is the one statement of the rule, for FOSS Earth, UMN VR and 0SFS alike,
 and [About](https://github.com/foss-earth/about) is its one implementation:
