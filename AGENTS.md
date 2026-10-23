@@ -7,6 +7,8 @@ cover; do not preload the whole documentation tree. Prefer adjacent checkouts
 
 - Preserve existing uncommitted work; stage explicit paths only.
 - Put scratch files, logs and screenshots in the target repo’s ignored `build/`.
+- Specifications, design documents and proposals belong in the repository documentation tree (`docs/docs/proposals/` in FOSS Earth, `docs/proposals/` in 0SFS/owning repos). Never write them into tool artifact directories, `~/.gemini/`, or outside the workspace.
+- Never write project files or documentation into `~/.gemini/`.
 - Never expose/commit credentials or send personal data to another service.
 - Never push source, branches, tags or deployment output unless the user explicitly
   requests that specific push. Publishing/deploying (including GitHub Pages)
