@@ -10,3 +10,7 @@ each repository that doesn't have its own copy.
 - [Agent instructions](AGENTS.md), which each repository's AGENTS.md points to
 
 Licensed under the [AGPL-3.0](LICENSE); see [NOTICE](NOTICE).
+
+[Agent entry point](AGENTS.md) · [Task-specific guidance](agent-reference.md) ·
+[Cross-organization repository map](https://github.com/foss-earth/docs/blob/main/docs/agent-start.md) ·
+[Custom test links and feedback](https://github.com/foss-earth/docs/blob/main/docs/test-feedback.md)
