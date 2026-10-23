@@ -74,13 +74,14 @@ dumping snapshots or reasoning. Verify historical claims against today's code.
   not publish it. From a side-by-side checkout:
 
   ```sh
-  cd ~/gh/foss-earth/app && npm run build
-  cd ../foss-earth.github.io && npm run build && npm run deploy
+  cd ~/gh/foss-earth/foss-earth.github.io && npm run deploy
   ```
 
-  That copies the app under https://foss-earth.github.io/app/ and pushes the
-  `gh-pages` branch of `foss-earth/foss-earth.github.io`, keeping
-  `/eac-prototype/` and `/examples/`. The campus tour is a second publish,
+  That builds the app and the site only when the app has something new since
+  the published one, otherwise keeping the published app; it puts the app
+  under https://foss-earth.github.io/app/ and pushes the `gh-pages` branch of
+  `foss-earth/foss-earth.github.io`, keeping `/eac-prototype/` and
+  `/examples/`, and pushes nothing when nothing changed. The campus tour is a second publish,
   because it links these checkouts: `cd ~/gh/UMN-VR/tour && npm run deploy`
   builds and pushes https://umn-vr.github.io/tour/.
 
