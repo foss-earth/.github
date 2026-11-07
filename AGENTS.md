@@ -2,8 +2,12 @@
 
 Applies to every repository in this organization. Read this file, then follow
 only the task-relevant rows below. Linked guides are required for the work they
-cover; do not preload the whole documentation tree. Prefer adjacent checkouts
-(`../.github/`, `~/gh/foss-earth/docs/`); use the GitHub links when unavailable.
+cover; do not preload the whole documentation tree. In a conversation, point
+at a workspace file by its checkout path (`~/gh/foss-earth/research/docs/example.md`).
+A github.com blob URL 404s until that commit is pushed, and the person in the
+conversation has the repos. In documentation that will be read in a browser,
+use a GitHub link whenever the file has a repository, so a reader without the
+other checkouts can open it.
 
 - Write modular, reusable code. Put a behavior in one shared module and call it. Do not copy it into a feature, a screen, or a package.
 - No vendor lock-in. Do not bind the program, its files, or its reports to one editor, one agent product, one host, or one vendor SDK when a standard interface exists.
